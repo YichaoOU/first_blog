@@ -1,0 +1,17 @@
+.myHeader{
+    height: 250px;
+    width: 100%;	
+	/*background: linear-gradient(0deg,#023D09,#0E3312);*/
+	background-image: url(../image/header.jpg);
+	background-size: 100% 100%;
+	color:white;
+}
+.header_box {
+	line-height: 250px;
+}
+.header_box p{
+	text-align: center;
+	margin:0px;
+	line-height: normal;
+	display: inline-block;
+}
