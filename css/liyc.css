@@ -6,6 +6,12 @@
 	background-size: 100% 100%;
 	color:white;
 }
+.study_header{
+    height: 250px;
+    width: 100%;	
+	background: linear-gradient(0deg,#023D09,#0E3312);
+	color:white;	
+}
 .header_box {
 	line-height: 250px;
 	text-align: center;
@@ -39,3 +45,89 @@
 	content: "|";
 	padding:0px 10px;
 }
+
+
+
+.group {
+    background: yellow;
+    width: 200px;
+    height: 700px;
+}
+.group .subgroup {
+    background: orange;
+    width: 150px;
+    height: 300px;
+}
+
+#liyc_bar{
+	margin-top: 20px;
+}
+
+#liyc_bar a{
+	padding:2px;
+}
+
+#liyc_bar > .nav > li > a{
+	font-size:20px;
+}
+
+#liyc_bar .nav  .nav>li>a{
+	padding-left: 20px;
+}
+
+#liyc_bar .active > a,
+#liyc_bar .active > a:hover,
+#liyc_bar .active > a:focus {
+
+	color: #563d7c;
+    text-decoration: none;          
+    background-color: transparent;  
+    border-left: 2px solid #563d7c;
+	font-weight: bold;
+}
+
+#liyc_bar a{
+	border-left: 2px solid transparent;
+	font-weight: normal;
+}
+
+#liyc_bar .nav .nav>li>a{
+	display:none;
+}
+
+#liyc_bar .active .nav>li>a{
+	display: block;
+}
+
+
+
+/* sidebar */
+.bs-docs-sidebar {
+    padding-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* all links */
+.bs-docs-sidebar .nav>li>a {
+    color: #999;
+    padding: 4px 20px;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+/* nested links */
+.bs-docs-sidebar .nav .nav>li>a {
+    padding-top: 1px;
+    padding-bottom: 1px;
+    padding-left: 30px;
+    font-size: 12px;
+}
+
+.bs-docs-sidebar .nav>.active>a { 
+    color: #563d7c;
+}
+
+
+
+
