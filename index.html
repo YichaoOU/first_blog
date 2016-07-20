@@ -9,6 +9,7 @@
 	<script src="./js/jquery-2.0.0.js"></script>
 	<script src="./js/bootstrap.js"></script>
 	<link rel="stylesheet" href="./css/liyc.css">
+	<link rel="stylesheet" href="./css/ihover.css">
 
 </head>
 <body>
@@ -17,7 +18,7 @@
 <div name="this is navigation bar">
 	
 	<nav class="navbar navbar-default" style="margin:0px;">
-		<div class="container-fluid">
+		<div class="container container-fluid ">
 
 
 			<button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mybar">
@@ -75,11 +76,19 @@
 	<div class="container container-fluid">
 		<div class="row" >
 			<div class=" col-xs-8 header_box" >
-				<p class="header_title">我的主页我的主页我的主页我的主页我的主页我的主页我的主页我的主页我的主页我的主页我的主页</p>
+				<p class="intro_text">我曾以为这就是结束</p>
 			</div>
 			<div class=" col-xs-4 header_box">
 				<img src="./image/pikachu.png" alt="" style="height:200px">
 			</div>
+
+		</div>
+		<div class="row" >
+			<div class="col-md-2"></div>
+			<div class="col-md-8 header_title" style="">
+				<p style="margin:0px;font-size:35px;">Welcome to my site!</p>
+			</div>
+			<div class="col-md-2"></div>
 		</div>
 	</div>
 	
@@ -89,17 +98,85 @@
 
 
 <!-- content -->
-<div name="content">
+<div name="content" class="container">
 	
+<div class="row" style="margin-top:30px;">
+  <div class="col-xs-3">
+ 
+    <!-- normal -->
+    <div class="ih-item circle effect1"><a href="#">
+        <div class="spinner"></div>
+        <div class="img"><img src="./image/2.jpg" alt="img"></div>
+        <div class="info">
+          <div class="info-back">
+            <h3>Heading here</h3>
+            <p>Description goes here</p>
+          </div>
+        </div></a></div>
+    <!-- end normal -->
+ 
+  </div>
+ 
+  <div class="col-xs-3">
+ 
+    <!-- colored -->
+    <div class="ih-item circle colored effect2 left_to_right"><a href="#">
+        
+        <div class="img"><img src="./image/5.jpg" alt="img"></div>
+        <div class="info">
+          <div class="info-back">
+            <h3>Heading here</h3>
+            <p>Description goes here</p>
+          </div>
+        </div></a></div>
+    <!-- end colored -->
+ 
+  </div>
 
+  <div class="col-xs-3">
+	<div class="ih-item circle effect5"><a href="#">
+	        <div class="img"><img src="./image/5.jpg" alt="img"></div>
+	        <div class="info">
+	          <div class="info-back">
+	            <h3>Heading here</h3>
+	            <p>Description goes here</p>
+	          </div>
+	        </div></a>
+	</div>
+  </div>
+
+  <div class="col-xs-3">
+  	    <div class="ih-item circle effect6 scale_up"><a href="#">
+        <div class="img"><img src="./image/2.jpg" alt="img"></div>
+        <div class="info">
+          <h3>Heading here</h3>
+          <p>Description goes here</p>
+        </div></a></div>
+
+
+  </div>
+</div>
 
 </div>
 
 
 
 <!-- footer -->
-<div name="footer">
-	
+<div name="footer" style="margin-top:30px;" class="container">
+	<hr>
+	<div class="row">
+		<div class="col-md-4">
+			Copyright © 2016 Apple Inc. All rights reserved.
+		</div>
+		<div class="col-md-8 footer-nav">
+			<ul>
+				<li><a href="#">About me</a></li>
+				<li><a href="#">Contact</a></li>
+				<li><a href="#">Follow me</a></li>
+				<li><a href="#">Back Top</a></li>
+			</ul>
+		</div>
+	</div>
 
 </div>
 

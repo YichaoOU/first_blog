@@ -1,5 +1,5 @@
 .myHeader{
-    height: 250px;
+    height: 650px;
     width: 100%;	
 	/*background: linear-gradient(0deg,#023D09,#0E3312);*/
 	background-image: url(../image/header.jpg);
@@ -8,10 +8,34 @@
 }
 .header_box {
 	line-height: 250px;
+	text-align: center;
 }
 .header_box p{
-	text-align: center;
+	
 	margin:0px;
 	line-height: normal;
 	display: inline-block;
+}
+.header_title{
+	line-height: 400px;
+	text-align: center;
+
+}
+.intro_text{
+	font-size:30px;
+	text-shadow: 4px 3px 0 #1d9d74,9px 8px 0 rgba(0,0,0,0.15);
+}
+.footer-nav{
+
+	text-align: right;
+	list-style: none;
+
+}
+.footer-nav li{
+	display:inline;
+	
+}
+.footer-nav li:not(:first-child):before{
+	content: "|";
+	padding:0px 10px;
 }
