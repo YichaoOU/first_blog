@@ -128,6 +128,23 @@
     color: #563d7c;
 }
 
+.sticker {
+width: 180px;
+height: 180px;
+}
+
+
+.pikachu .sticker-img {
+background-image: url(../image/pikachu.png);
+ background-size: 180px 180px;
+ 
+}
+
+.vcenter {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
+}
 
 
 

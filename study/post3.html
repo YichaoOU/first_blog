@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Hello Yichao</title>
+
+	<link rel="stylesheet" href="../css/bootstrap.css">
+	<link rel="stylesheet" href="../css/bootstrap-theme.css">
+	<script src="../js/jquery-2.0.0.js"></script>
+	<script src="../js/bootstrap.js"></script>
+	<link rel="stylesheet" href="../css/liyc.css">
+	<link rel="stylesheet" href="../css/ihover.css">
+
+</head>
+<body>
+
+<div id="top"></div>
+<!-- Navigation bar -->
+<div name="this is navigation bar">
+	
+	<nav class="navbar navbar-default" style="margin:0px;">
+		<div class="container container-fluid ">
+
+
+			<button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mybar">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+
+			</button>
+
+      			<a href="../index.html" class="navbar-brand" style="margin:0px;padding:0px;"><img src="../image/pikachu.png" alt="主页" style="height:50px;"></a>
+		    				
+
+
+			<div id="mybar" class="navbar-collapse collapse">
+			
+			<ul class="nav navbar-nav navbar-left">
+				<li><a href="../life/index.html">Life</a></li>
+				<li><a href="../pokemon/index.html">Pokemon</a></li>
+				<li class="active"><a href="../study/index.html">Study</a></li>
+
+				<li class="dropdown">
+					<a href="#" data-toggle="dropdown"  aria-haspopup="true">my links <span class="caret"></span></a>
+					<ul class="dropdown-menu">
+						<li><a href="../link1.html">link1</a></li>
+						<li><a href="../link2.html">link2</a></li>
+						<li><a href="../link3.html">link3</a></li>
+
+					</ul>
+				</li>
+
+			</ul>
+
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="#">Twitter</a></li>
+				<li><a href="#">Facebook</a></li>
+				<li><a href="#">Linkin</a></li>
+			</ul>
+
+			</div>
+			
+
+
+
+		</div>
+	</nav>
+
+
+
+</div>
+
+
+<!-- Header -->
+<div name="this is header" class="study_header">
+
+	<div class="container container-fluid">
+		<div class="row" >
+			<div class=" col-xs-8 header_box" >
+				<p class="intro_text">我曾以为这就是结束</p>
+			</div>
+			<div class=" col-xs-4 header_box">
+				<img src="../image/pikachu.png" alt="" style="height:200px">
+			</div>
+
+		</div>
+
+	</div>
+	
+
+
+</div>
+
+
+<!-- content -->
+<div name="content" class="container">
+
+<div class="row">
+	<div class="col-xs-9">
+		<h1 id="Overview">Overview</h1>
+		<hr>
+		<h4>Get the lowdown on the key pieces of Bootstrap's infrastructure, including our approach to better, faster, stronger web development.</h4>
+		<h2 id="o1">HTML5 doctype</h2>
+		<p>Bootstrap makes use of certain HTML elements and CSS properties that require the use of the HTML5 doctype. Include it at the beginning of all your projects.</p>
+
+		<pre>
+			< !DOCTYPE html>
+			< html lang="en">
+			  ...
+			< /html>
+		</pre>
+
+		<h2 id="o2">Mobile first</h2>
+		<p>With Bootstrap 2, we added optional mobile friendly styles for key aspects of the framework. With Bootstrap 3, we've rewritten the project to be mobile friendly from the start. Instead of adding on optional mobile styles, they're baked right into the core. In fact, <strong>Bootstrap is mobile first</strong>. Mobile first styles can be found throughout the entire library instead of in separate files.</p>
+		<p>To ensure proper rendering and touch zooming, add the viewport meta tag  to your <code> < head></code>.</p>
+
+		<pre > < meta name="viewport" content="width=device-width, initial-scale=1"> </pre>
+
+		<p>You can disable zooming capabilities on mobile devices by adding <code>user-scalable=no</code> to the viewport meta tag. This disables zooming, meaning users are only able to scroll, and results in your site feeling a bit more like a native application. Overall, we don't recommend this on every site, so use caution!</p>
+
+		<pre>< meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"></pre>
+
+		<h2 id="o3">Typography and links</h2>
+
+		<p>Bootstrap sets basic global display, typography, and link styles. Specifically, we:
+
+		</p>
+		<ul>
+			<li>Set background-color: #fff; on the body</li>
+			<li>Use the @font-family-base, @font-size-base, and @line-height-base attributes as our typographic base</li>
+			<li>Set the global link color via @link-color and apply link underlines only on :hover</li>
+		</ul>
+
+		<p>These styles can be found within scaffolding.less.</p>
+
+		<h2 id="o4">Normalize.css</h2>
+
+		<p>For improved cross-browser rendering, we use <a href="#">Normalize.css</a>, a project by Nicolas Gallagher and Jonathan Neal.</p>
+
+		<h2 id="o5">Containers</h2>
+
+		<p>Bootstrap requires a containing element to wrap site contents and house our grid system. You may choose one of two containers to use in your projects. Note that, due to padding and more, neither container is nestable.</p>
+
+		<p>Use .container for a responsive fixed width container.
+
+		</p>
+
+		<h1 id="Grid_system">Grid system</h1>
+		<hr>
+		<h4>Bootstrap includes a responsive, mobile first fluid grid system that appropriately scales up to 12 columns as the device or viewport size increases. It includes predefined classes for easy layout options, as well as powerful mixins for generating more semantic layouts.</h4>
+
+		<h2 id="g1">Introduction</h2>
+
+		<p>Grid systems are used for creating page layouts through a series of rows and columns that house your content. Here's how the Bootstrap grid system works:</p>
+
+		<ul>
+			
+<li>Rows must be placed within a .container (fixed-width) or .container-fluid (full-width) for proper alignment and padding.</li>
+<li>Use rows to create horizontal groups of columns.</li>
+<li>Content should be placed within columns, and only columns may be immediate children of rows.</li>
+<li>Predefined grid classes like .row and .col-xs-4 are available for quickly making grid layouts. Less mixins can also be used for more semantic layouts.</li>
+<li>Columns create gutters (gaps between column content) via padding. That padding is offset in rows for the first and last column via negative margin on .rows.</li>
+<li>The negative margin is why the examples below are outdented. It's so that content within grid columns is lined up with non-grid content.</li>
+<li>Grid columns are created by specifying the number of twelve available columns you wish to span. For example, three equal columns would use three .col-xs-4.</li>
+<li>If more than 12 columns are placed within a single row, each group of extra columns will, as one unit, wrap onto a new line.</li>
+<li>Grid classes apply to devices with screen widths greater than or equal to the breakpoint sizes, and override grid classes targeted at smaller devices. Therefore, e.g. applying any .col-md-* class to an element will not only affect its styling on medium devices but also on large devices if a .col-lg-* class is not present.</li>
+		
+		</ul>
+
+
+<h2 id="g2">Grid options</h2>
+
+
+
+<div class="table-responsive">
+	<table class="table table-bordered table-striped">
+		<thead>
+		<tr>
+			<th></th>
+		<th>Extra small devices Phones (&lt;768px)</th>
+		<th>Small devices Tablets (≥768px)</th>
+		<th>Medium devices Desktops (≥992px)	</th>
+		<th>Large devices Desktops (≥1200px)</th>
+		</tr>
+		</thead>
+		<tbody>
+			<tr class="info">
+				<th class="text-nowrap">Grid behavior</th>
+				<td>Horizontal at all times</td>
+				<td colspan="3">Collapsed to start, horizontal above breakpoints</td>
+			</tr>
+			<tr class="danger">
+			<th class="text-nowrap">Container width</th>
+				<td class="text-muted">None (auto)</td>
+					<td>750px</td>
+					<td>970px</td>
+					<td>1170px</td>
+			</tr>
+		</tbody>
+
+
+
+	</table>
+</div>
+
+
+
+<div class="table-responsive"> <table class="table table-bordered table-striped"> <thead> <tr> <th></th> <th> Extra small devices <small>Phones (&lt;768px)</small> </th> <th> Small devices <small>Tablets (≥768px)</small> </th> <th> Medium devices <small>Desktops (≥992px)</small> </th> <th> Large devices <small>Desktops (≥1200px)</small> </th> </tr> </thead> <tbody> <tr> <th class="text-nowrap">Grid behavior</th> <td>Horizontal at all times</td> <td colspan="3">Collapsed to start, horizontal above breakpoints</td> </tr> <tr> <th class="text-nowrap" scope="row">Container width</th> <td>None (auto)</td> <td>750px</td> <td>970px</td> <td>1170px</td> </tr> <tr> <th class="text-nowrap" scope="row">Class prefix</th> <td><code>.col-xs-</code></td> <td><code>.col-sm-</code></td> <td><code>.col-md-</code></td> <td><code>.col-lg-</code></td> </tr> <tr> <th class="text-nowrap" scope="row"># of columns</th> <td colspan="4">12</td> </tr> <tr> <th class="text-nowrap" scope="row">Column width</th> <td class="text-muted">Auto</td> <td>~62px</td> <td>~81px</td> <td>~97px</td> </tr> <tr> <th class="text-nowrap" scope="row">Gutter width</th> <td colspan="4">30px (15px on each side of a column)</td> </tr> <tr> <th class="text-nowrap" scope="row">Nestable</th> <td colspan="4">Yes</td> </tr> <tr> <th class="text-nowrap" scope="row">Offsets</th> <td colspan="4">Yes</td> </tr> <tr> <th class="text-nowrap" scope="row">Column ordering</th> <td colspan="4">Yes</td> </tr> </tbody> </table> </div>
+
+
+
+	</div>
+	<div class="col-xs-3 hidden-xs hidden-sm" id="liyc_bar">
+	<ul class="nav nav-stacked" data-spy="affix" data-offset-top="320" style="top:30px;">
+		<li><a href="#Overview">Overview</a>
+		<ul class="nav nav-stacked">
+			<li><a href="#o1">HTML5 Doctype</a></li>
+			<li><a href="#o2">Mobile FIrst</a></li>
+			<li><a href="#o3">Typography and links</a></li>
+			<li><a href="#o4">Normalize.css</a></li>
+			<li><a href="#o5">Containers</a></li>
+		</li>
+		</ul>
+		<li><a href="#Grid_system">Grid system</a>
+		<ul class="nav nav-stacked">
+			<li><a href="#g1">Introduction</a></li>
+			<li><a href="#g2">Grid options</a></li>
+		</ul>
+		</li>
+	</ul>
+		
+	</div>
+</div>
+
+
+
+
+
+</div>
+
+<script>
+$('body').scrollspy({
+    target: '#liyc_bar',
+    offset: 40
+});
+</script>
+
+
+<!-- footer -->
+<div name="footer" style="margin-top:30px;" class="container">
+	<hr>
+	<div class="row">
+		<div class="col-md-4">
+			Copyright © 2016 Yichao. All rights reserved.
+		</div>
+		<div class="col-md-8 footer-nav">
+			<ul>
+				<li><a href="#">About me</a></li>
+				<li><a href="#">Contact</a></li>
+				<li><a href="#">Follow me</a></li>
+				<li><a href="#top">Back Top</a></li>
+			</ul>
+		</div>
+	</div>
+
+</div>
+
+
+
+
+
+	
+</body>
+</html>
